@@ -18,9 +18,9 @@ const PastSpeakers = () => {
     const width = window.innerWidth;
     if (width < 640) { // Mobile
       return {
-        itemSize: 100,
+        itemSize: 125,
         translateZ: 150,
-        containerHeight: 300
+        containerHeight: 400
       };
     } else if (width < 1024) { // Tablet
       return {
