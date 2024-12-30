@@ -1,21 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      keyframes: {
-        marquee: {
-          "0%": { transform: "rotateY(0deg)" },
-          "100%": { transform: "rotateY(360deg)" },
-        },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle at left, var(--tw-gradient-stops))',
       },
-      animation: {
-        marquee: "marquee 15s linear infinite",
+      fontFamily: {
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};
