@@ -51,23 +51,27 @@ const Faq = () => {
               }`}
             >
               <div
-                className={`px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-zinc-700 transition-colors `}
+                className={`px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-zinc-700 transition-colors`}
                 onClick={() => togglerFunction(i)}
               >
                 <p className="flex-1 text-[#EEEEEE]">{item.title}</p>
-                <span className="text-[#EEEEEE]">
-                  {activeId === i ? (
-                    <FontAwesomeIcon icon={faAngleUp} />
-                  ) : (
-                    <FontAwesomeIcon icon={faAngleDown} />
-                  )}
+                <span
+                  className={`text-[#EEEEEE] transform transition-transform duration-300 ${
+                    activeId === i ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  <FontAwesomeIcon icon={faAngleDown} />
                 </span>
               </div>
-              {activeId === i && (
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeId === i ? "max-h-40" : "max-h-0"
+                }`}
+              >
                 <div className="px-4 py-3 bg-zinc-900 text-[#EEEEEE]">
                   <p>{item.description}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
