@@ -3,12 +3,12 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div className="w-full md:min-h-screen relative mx-auto bg-black pt-12 pb-12 -z-20">
+      <div className="w-full md:min-h-screen relative mx-auto bg-[#111111] pt-12 pb-12 -z-20">
         {/* Background Blob */}
         <div className="absolute top-[0] -left-40 w-[200px] h-[400px] md:w-[600px] md:h-[530px] bg-green-500/30 rounded-full blur-3xl -z-10" />
         {/* About us Heading */}
         <div className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8">
-          <h1 className="font-bold md:text-6xl text-3xl text-white z-10 font-jakarta text-center">
+          <h1 className="font-semibold md:text-5xl text-3xl text-white z-10 font-jakarta text-center">
             About E-Summit'25
           </h1>
           <div className="h-1 w-36 bg-[#00B25C] rounded-md"></div>
