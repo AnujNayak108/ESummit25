@@ -2,7 +2,7 @@ import React from 'react';
 
 const SponsorshipSection = () => {
   return (
-    <section className="relative min-h-screen bg-[#111111] py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen py-20 px-4 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
 

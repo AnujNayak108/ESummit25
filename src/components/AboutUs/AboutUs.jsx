@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div className="w-full md:min-h-screen relative mx-auto bg-[#111111] pt-12 pb-12 -z-20">
+      <div className="w-full p-24 relative z-20">
         {/* Background Blob */}
         <div className="absolute top-[0] -left-40 w-[200px] h-[400px] md:w-[600px] md:h-[530px] bg-green-500/30 rounded-full blur-3xl -z-10" />
         {/* About us Heading */}
@@ -15,7 +15,7 @@ const AboutUs = () => {
         </div>
 
         {/* About us container */}
-        <div className="flex flex-wrap justify-center items-stretch	md:gap-x-12 gap-6  text-gray-300 z-10 md:mt-16 mt-4">
+        <div className="flex flex-wrap justify-center items-stretch md:gap-x-12 gap-6 text-gray-300 z-10 md:mt-16 mt-4">
           {/* Left Container */}
           <div className="flex flex-col md:w-2/5 w-4/5 gap-6">
             {/* About edc card */}
