@@ -5,6 +5,7 @@ import SponsorshipSection from "./components/SponsorshipSection"
 import Faq from "./components/FAQ/Faq"
 import AboutUs from "./components/AboutUs/AboutUs";
 import EventSchedule from "./components/events"
+import Navbar from "./components/Navbar"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <PastSpeakersmain/>
     <SponsorshipSection/>
     <Faq/>
+    <Navbar/>
     </>
   );
 }
