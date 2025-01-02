@@ -33,9 +33,9 @@ const Faq = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#111111] py-20 px-4">
+    <section className="relative min-h-screen py-20 px-4">
       <div className="text-center mb-12">
-        <h2 className="font-sans text-4xl md:text-5xl font-semibold text-[#EEEEEE]">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#EEEEEE]">
           Frequently Asked Questions
         </h2>
         <div className="w-[125px] h-[4px] bg-green-500 mx-auto mt-2" />
@@ -51,23 +51,27 @@ const Faq = () => {
               }`}
             >
               <div
-                className={`px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-zinc-700 transition-colors `}
+                className={`px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-zinc-700 transition-colors`}
                 onClick={() => togglerFunction(i)}
               >
                 <p className="flex-1 text-[#EEEEEE]">{item.title}</p>
-                <span className="text-[#EEEEEE]">
-                  {activeId === i ? (
-                    <FontAwesomeIcon icon={faAngleUp} />
-                  ) : (
-                    <FontAwesomeIcon icon={faAngleDown} />
-                  )}
+                <span
+                  className={`text-[#EEEEEE] transform transition-transform duration-300 ${
+                    activeId === i ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  <FontAwesomeIcon icon={faAngleDown} />
                 </span>
               </div>
-              {activeId === i && (
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeId === i ? "max-h-40" : "max-h-0"
+                }`}
+              >
                 <div className="px-4 py-3 bg-zinc-900 text-[#EEEEEE]">
                   <p>{item.description}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

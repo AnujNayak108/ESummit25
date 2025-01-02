@@ -2,14 +2,14 @@ import React from 'react';
 
 const SponsorshipSection = () => {
   return (
-    <section className="relative min-h-screen bg-[#111111] py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen py-20 px-4 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Heading */}
         <div className="text-center mb-12">
-          <h2 className="font-sans text-4xl md:text-5xl font-semibold text-white">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white">
             Our Sponsors
           </h2>
           <div className="w-[100px] h-[4px] bg-green-500 mx-auto mt-2" />
