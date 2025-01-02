@@ -88,7 +88,7 @@ const EventSchedule = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h1 className="font-semibold md:text-5xl text-3xl text-white">Events Schedule</h1>
-                    <div className="h-1 w-36 bg-[#00B25C] rounded-md mx-auto mt-4"></div>
+                    <div className="h-1 w-36 bg-primaryGreen rounded-md mx-auto mt-4"></div>
                 </div>
                 <div className="mb-12">
                     <div className="flex justify-center space-x-4 mb-8">
@@ -97,8 +97,8 @@ const EventSchedule = () => {
                                 key={day}
                                 onClick={() => setActiveDay(day)}
                                 className={`px-6 py-2 rounded-lg backdrop-blur-lg border border-[#616161] transition-all duration-300 ${activeDay === day
-                                        ? 'bg-[#00B25C] text-[#EEEEEE]'
-                                        : 'bg-[#1A1A1A] text-[#B6B6B6]'
+                                        ? 'bg-primaryGreen text-primaryText'
+                                        : 'bg-greyColor text-secondaryText'
                                     }`}
                             >
                                 {day === 'day1' ? 'Day 1' : day === 'day2' ? 'Day 2' : 'Day 3'}

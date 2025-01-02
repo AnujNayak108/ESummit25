@@ -7,11 +7,11 @@ export default {
         "gradient-radial":
           "radial-gradient(circle at left, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        jakarta: ["Plus Jakarta Sans", "sans-serif"],
-      },
       colors: {
         primaryGreen: "#00B25C",
+        primaryText: "#EEEEEE",
+        secondaryText: "#B6B6B6",
+        greyColor: "#1A1A1A",
       },
     },
   },

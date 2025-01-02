@@ -9,7 +9,7 @@ const SponsorshipSection = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Main Heading */}
         <div className="text-center mb-12">
-          <h2 className="font-sans text-4xl md:text-5xl font-semibold text-white">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white">
             Our Sponsors
           </h2>
           <div className="w-[100px] h-[4px] bg-green-500 mx-auto mt-2" />
