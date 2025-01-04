@@ -6,6 +6,7 @@ import Faq from "./components/FAQ/Faq"
 import AboutUs from "./components/AboutUs/AboutUs"
 import EventSchedule from "./components/events"
 import Navbar from "./components/navbar.jsx"
+import ContactUs from "./components/Contact.jsx"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <PastSpeakersmain/>
     <SponsorshipSection/>
     <Faq/>
+    <ContactUs/>
     </>
   );
 }
