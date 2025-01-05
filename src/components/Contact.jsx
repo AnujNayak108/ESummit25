@@ -7,11 +7,11 @@ const ContactUs = () => {
       <div className="max-w-5xl w-full p-6 rounded-lg ">
         <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12">
           Contact Us
-          <div className="mt-2 h-1 bg-primaryGreen w-20 mx-auto rounded"></div>
+          <div className="mt-2 h-1 bg-primaryGreen w-20 mx-auto rounded "></div>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Section */}
-          <div className="bg-primaryGrey p-6 rounded-lg shadow-inner">
+          <div className="bg-primaryGrey p-6 rounded-lg shadow-inner border border-borderColor">
             <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
             <form className="space-y-4">
               <div>
@@ -72,14 +72,14 @@ const ContactUs = () => {
               </div>
               <button
                 type="submit"
-                className=" px-8 lg:px-20 mx-auto block py-2  bg-primaryGreen text-white rounded-lg font-medium hover:bg-secondaryGreen hover:scale-105 transition"
+                className=" px-8 lg:px-20 mx-auto block py-2 bg-primaryGreen text-white rounded-lg font-medium hover:bg-secondaryGreen hover:scale-105 transition"
               >
                 Send message
               </button>
             </form>
           </div>
           {/* Right Section */}
-          <div className="bg-primaryGrey h-[135px] p-6 rounded-lg shadow-inner">
+          <div className="bg-primaryGrey h-[135px] p-6 rounded-lg shadow-inner border border-borderColor">
             <h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
