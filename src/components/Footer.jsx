@@ -1,9 +1,8 @@
 import React from "react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../../assets/edclogo3d.png";
+import logo from "../assets/edclogo3d.png";
 import emailjs from '@emailjs/browser';
-import edclogo from "../../assets/edclogo3d.png";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -47,7 +46,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black w-screen text-white p-4 ">
+    <div className="bg-black text-white p-4 ">
       <div className="flex flex-col md:justify-start items-center">
       <div className=" flex flex-col md:justify-start items-center">
         <div className="flex md:flex-row flex-col gap-12">

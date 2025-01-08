@@ -6,6 +6,7 @@ import Faq from "./components/FAQ/Faq"
 import AboutUs from "./components/AboutUs/AboutUs"
 import EventSchedule from "./components/events"
 import Navbar from "./components/navbar.jsx"
+import Footer from "./components/Footer.jsx"
 
 function App() {
   return (
