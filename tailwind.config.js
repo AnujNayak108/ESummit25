@@ -16,6 +16,19 @@ export default {
         secondaryGrey: "#121212",
         borderColor: "#616161",
       },
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+
+        },
+      },
+        animation: {
+          'infinte-slide': '20s slide infinite linear',
+        },
+    },
+    variants: {
+      animation: ['responsive', 'hover'],
     },
   },
   plugins: [],
