@@ -8,7 +8,7 @@ function Sponser() {
 
     <div data-aos="fade-up"  data-aos-anchor-placement="center-bottom"data-aos-duration="3000">
       <div className=' mt-24 mb-16'>
-      <div className="flex flex-col justify-center items-center md:gap-6 gap-3 md:mb-0 mb-[-50px]">
+      <div className="flex flex-col justify-center items-center md:gap-6 gap-3 md:mb-0 ">
             <h1 className="font-semibold md:text-5xl text-3xl text-white">Past Sponsors</h1>
             <div className="h-1 w-36 bg-[#00B25C] rounded-md"></div>
         </div>

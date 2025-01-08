@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import photo from './logos/photo1.png'
+import { Slide, Fade } from "react-awesome-reveal";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 
 const PastSpeakers = () => {
   const [rotation, setRotation] = useState(0);
   const carouselRef = useRef(null);
   const containerRef = useRef(null);
-  const isMouseDown = useRef(false);
-  const startX = useRef(0);
-  const startRotation = useRef(0);
 
   const items = [1, 2, 3, 4, 5, 6];
   const numberOfItems = items.length;
@@ -48,50 +48,6 @@ const PastSpeakers = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    const carouselElement = carouselRef.current;
-    const containerElement = containerRef.current;
-
-    if (!carouselElement || !containerElement) return;
-
-    const handleMouseDown = (e) => {
-      isMouseDown.current = true;
-      startX.current = e.clientX || e.touches?.[0].clientX;
-      startRotation.current = rotation;
-      carouselElement.style.cursor = "grabbing";
-    };
-
-    const handleMouseMove = (e) => {
-      if (!isMouseDown.current) return;
-      
-      const x = e.clientX || e.touches?.[0].clientX;
-      const diff = x - startX.current;
-      const newRotation = startRotation.current + (diff * 0.5);
-      setRotation(newRotation);
-    };
-
-    const handleMouseUp = () => {
-      isMouseDown.current = false;
-      carouselElement.style.cursor = "grab";
-    };
-
-    carouselElement.addEventListener("mousedown", handleMouseDown);
-    carouselElement.addEventListener("touchstart", handleMouseDown);
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("touchmove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-    window.addEventListener("touchend", handleMouseUp);
-
-    return () => {
-      carouselElement.removeEventListener("mousedown", handleMouseDown);
-      carouselElement.removeEventListener("touchstart", handleMouseDown);
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("touchmove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-      window.removeEventListener("touchend", handleMouseUp);
-    };
-  }, [rotation]);
-
   const rotateCarousel = (direction) => {
     const newRotation = rotation + (direction * (360 / numberOfItems));
     setRotation(newRotation);
@@ -109,12 +65,11 @@ const PastSpeakers = () => {
     height: "100%",
     transformStyle: "preserve-3d",
     transform: `rotateY(${rotation}deg)`,
-    transition: "transform 0.5s ease-out",
-    cursor: "grab"
+    transition: "transform 0.5s ease-out"
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden overflow-hidden">
+    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden overflow-hidden md:py-32 py-24 ">
       <div 
         ref={containerRef}
         className="w-full max-w-4xl mx-auto px-4 relative"
@@ -137,6 +92,7 @@ const PastSpeakers = () => {
         <div
           ref={carouselRef}
           style={carouselStyle}
+          className=""
         >
           {items.map((_, index) => (
             <div
@@ -154,13 +110,26 @@ const PastSpeakers = () => {
                   translateZ(${responsiveValues.translateZ}px)
                 `,
               }}
-              className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg transition-transform duration-300"
+              className="flex flex-col items-center justify-center bg-black rounded-lg shadow-lg transition-transform duration-300"
             >
               <img 
                 src={photo} 
                 alt={`Item ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
               />
+              <div className="space-y-1 bg-black w-full h-full p-2">
+                                <Slide cascade>
+                                  <h1 className="text-sm font-semibold text-white">{"Speaker name"}</h1>
+                                  <h6 className="text-[#00B25C] text-[0.65rem]">{"Designation"}</h6>
+                                  <Fade cascade damping={0.05}>
+                                    <h6 className="text-[0.65rem] text-[#B6B6B6]">{"Each character will appear one by one"}</h6>
+                                  </Fade>
+                                  <div className="flex flex-row justify-start items-start gap-4 text-[#B6B6B6]">
+                                    <a href=""><FaLinkedin /></a>
+                                    <a href=""><BsTwitterX /></a>
+                                  </div>
+                                </Slide>
+                              </div>
             </div>
           ))}
         </div>
