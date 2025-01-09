@@ -1,4 +1,6 @@
 import React from "react";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 import Photo1 from "../past speakers/logos/photo1.png";
 import Photo2 from "../past speakers/logos/photo1.png";
 import Photo3 from "../past speakers/logos/photo1.png";
@@ -25,17 +27,17 @@ const FeaturedSpeakers = () => {
                 className="w-full max-w-[300px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-500">
-                <div className="space-y-4">
+              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-50%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+              <div className="space-y-1">
                   <Slide cascade>
-                    <h1 className="text-3xl font-semibold">{"Sunrise"}</h1>
+                    <h1 className="text-2xl font-semibold">{"Speaker name"}</h1>
+                    <h6 className="text-[#00B25C]">{"Designation"}</h6>
                     <Fade cascade damping={0.05}>
-                      {"Each character will appear one by one"}
+                      <h6>{"Each character will appear one by one"}</h6>
                     </Fade>
-                    <div>
-                      <button className="border border-white px-4 py-2 rounded-lg hover:bg-[#111111]/20 duration-300">
-                        View
-                      </button>
+                    <div className="flex flex-row justify-start items-start gap-4">
+                      <a href=""><FaLinkedin /></a>
+                      <a href=""><BsTwitterX /></a>
                     </div>
                   </Slide>
                 </div>
@@ -50,17 +52,17 @@ const FeaturedSpeakers = () => {
                 className="w-full max-w-[300px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-500">
-                <div className="space-y-4">
+              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-50%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+              <div className="space-y-1">
                   <Slide cascade>
-                    <h1 className="text-3xl font-semibold">{"Sunrise"}</h1>
+                    <h1 className="text-2xl font-semibold">{"Speaker name"}</h1>
+                    <h6 className="text-[#00B25C]">{"Designation"}</h6>
                     <Fade cascade damping={0.05}>
-                      {"Each character will appear one by one"}
+                      <h6>{"Each character will appear one by one"}</h6>
                     </Fade>
-                    <div>
-                      <button className="border border-white px-4 py-2 rounded-lg hover:bg-[#111111]/20 duration-300">
-                        View
-                      </button>
+                    <div className="flex flex-row justify-start items-start gap-4">
+                      <a href=""><FaLinkedin /></a>
+                      <a href=""><BsTwitterX /></a>
                     </div>
                   </Slide>
                 </div>
@@ -75,17 +77,17 @@ const FeaturedSpeakers = () => {
                 className="w-full max-w-[300px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-500">
-                <div className="space-y-4">
+              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-50%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+              <div className="space-y-1">
                   <Slide cascade>
-                    <h1 className="text-3xl font-semibold">{"Sunrise"}</h1>
+                    <h1 className="text-2xl font-semibold">{"Speaker name"}</h1>
+                    <h6 className="text-[#00B25C]">{"Designation"}</h6>
                     <Fade cascade damping={0.05}>
-                      {"Each character will appear one by one"}
+                      <h6>{"Each character will appear one by one"}</h6>
                     </Fade>
-                    <div>
-                      <button className="border border-white px-4 py-2 rounded-lg hover:bg-[#111111]/20 duration-300">
-                        View
-                      </button>
+                    <div className="flex flex-row justify-start items-start gap-4">
+                      <a href=""><FaLinkedin /></a>
+                      <a href=""><BsTwitterX /></a>
                     </div>
                   </Slide>
                 </div>
@@ -102,17 +104,17 @@ const FeaturedSpeakers = () => {
                 className="w-full max-w-[300px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-500">
-                <div className="space-y-4">
+              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-50%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+                <div className="space-y-1">
                   <Slide cascade>
-                    <h1 className="text-3xl font-semibold">{"Sunrise"}</h1>
+                    <h1 className="text-2xl font-semibold">{"Speaker name"}</h1>
+                    <h6 className="text-[#00B25C]">{"Designation"}</h6>
                     <Fade cascade damping={0.05}>
-                      {"Each character will appear one by one"}
+                      <h6>{"Each character will appear one by one"}</h6>
                     </Fade>
-                    <div>
-                      <button className="border border-white px-4 py-2 rounded-lg hover:bg-[#111111]/20 duration-300">
-                        View
-                      </button>
+                    <div className="flex flex-row justify-start items-start gap-4">
+                      <a href=""><FaLinkedin /></a>
+                      <a href=""><BsTwitterX /></a>
                     </div>
                   </Slide>
                 </div>
@@ -127,17 +129,17 @@ const FeaturedSpeakers = () => {
                 className="w-full max-w-[300px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
-              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-500">
-                <div className="space-y-4">
+              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-50%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+              <div className="space-y-1">
                   <Slide cascade>
-                    <h1 className="text-3xl font-semibold">{"Sunrise"}</h1>
+                    <h1 className="text-2xl font-semibold">{"Speaker name"}</h1>
+                    <h6 className="text-[#00B25C]">{"Designation"}</h6>
                     <Fade cascade damping={0.05}>
-                      {"Each character will appear one by one"}
+                      <h6>{"Each character will appear one by one"}</h6>
                     </Fade>
-                    <div>
-                      <button className="border border-white px-4 py-2 rounded-lg hover:bg-[#111111]/20 duration-300">
-                        View
-                      </button>
+                    <div className="flex flex-row justify-start items-start gap-4">
+                      <a href=""><FaLinkedin /></a>
+                      <a href=""><BsTwitterX /></a>
                     </div>
                   </Slide>
                 </div>

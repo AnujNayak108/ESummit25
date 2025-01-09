@@ -28,7 +28,7 @@ function App() {
         <Faq />
       </section>
     </div>
+ 
   );
 }
-
 export default App;
