@@ -7,7 +7,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
-  const [email, setEmail] = useState(' ');
+  const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     setEmail(e.target.value);
