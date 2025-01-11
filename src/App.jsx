@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs/AboutUs"
 import EventSchedule from "./components/events"
 import Navbar from "./components/navbar.jsx"
 import ContactUs from "./components/Contact.jsx"
+import Sponser from "./components/Sponser/Sponser.jsx"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <FeaturedSpeakers/>
     <PastSpeakersmain/>
     <SponsorshipSection/>
+    <Sponser/>
     <Faq/>
     <ContactUs/>
     </>
