@@ -151,25 +151,25 @@ const ContactUs = () => {
           </div>
           {/* Right Section */}
           <div className="space-y-6">
-          <div className="bg-primaryGrey p-6 rounded-lg shadow-inner border border-borderColor">
+          
           <div data-aos = "fade-left" data-aos-duration="1000" className="bg-primaryGrey h-[135px] p-6 rounded-lg shadow-inner border border-borderColor">
 
             <h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/edcbitmesra/"
                 className="w-12 h-12 flex justify-center items-center text-primaryGreen rounded-lg hover:text-secondaryGreen bg-[#303030] transition"
               >
               <FaFacebookF size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/edcbitmesra/"
                 className="w-12 h-12 flex justify-center items-center bg-[#303030] rounded-lg text-primaryGreen hover:text-secondaryGreen  transition"
               >
               <FaInstagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/edcbitmesra/"
                 className="w-12 h-12 flex justify-center items-center bg-[#303030] text-primaryGreen rounded-lg hover:text-secondaryGreen hover:border-primaryGreen transition"
               >
               <FaLinkedinIn size={20} />
@@ -192,6 +192,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
