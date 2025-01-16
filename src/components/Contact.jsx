@@ -152,7 +152,7 @@ const ContactUs = () => {
           {/* Right Section */}
           <div className="space-y-6">
           
-          <div data-aos = "fade-left" data-aos-duration="1000" className="bg-primaryGrey h-[135px] p-6 rounded-lg shadow-inner border border-borderColor">
+          <div data-aos = "fade-left" data-aos-duration="1000" className="bg-primaryGrey p-6 rounded-lg shadow-inner border border-borderColor">
 
             <h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
