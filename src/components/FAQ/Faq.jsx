@@ -5,23 +5,23 @@ import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 const frequentlyAskQuestions = [
   {
     title: "How many members can form a team?",
-    description: "Well, add the content here.",
+    description: "Four members per team.",
   },
   {
     title: "What are the key responsibilities of a team leader?",
-    description: "There are a few.",
+    description: "To formulate a strategy and utilise team resources effectively to lead the team to victory.",
   },
   {
     title: "How can teams effectively resolve conflicts?",
-    description: "Let it burn.",
+    description: "Open communication is the key. Managing expectations and having a sense of team is essential",
   },
   {
     title: "What are the benefits of teamwork in a project?",
-    description: "You don't need to work.",
+    description: "The work gets completed seamlessly and each players gets to play according to his/her strengths.",
   },
   {
-    title: "How do teams improve communication and collaboration?",
-    description: "Silence sometimes is the best way.",
+    title: "Is professional knowledge of figma required to attend UI/UX workshop?",
+    description: "No, we will be there to guide you through each step.",
   },
 ];
 
@@ -38,7 +38,7 @@ const Faq = () => {
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-[#EEEEEE]">
           Frequently Asked Questions
         </h2>
-        <div className="w-[125px] h-[4px] bg-green-500 mx-auto mt-2" />
+        <div className="w-[125px] h-[4px] bg-green-500 mx-auto mt-2 rounded-lg " />
       </div>
 
       <div className="w-full flex justify-center">
@@ -68,7 +68,7 @@ const Faq = () => {
                   activeId === i ? "max-h-40" : "max-h-0"
                 }`}
               >
-                <div className="px-4 py-3 bg-zinc-900 text-[#EEEEEE]">
+                <div className="px-4 py-3 bg-zinc-900 text-[#B6B6B6]">
                   <p>{item.description}</p>
                 </div>
               </div>
