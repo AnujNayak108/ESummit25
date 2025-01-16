@@ -5,23 +5,26 @@ import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 const frequentlyAskQuestions = [
   {
     title: "How many members can form a team?",
-    description: "Four members per team.",
+    description: "One to four members can participate depending upon the event.",
   },
   {
-    title: "What are the key responsibilities of a team leader?",
-    description: "To formulate a strategy and utilise team resources effectively to lead the team to victory.",
-  },
-  {
-    title: "How can teams effectively resolve conflicts?",
-    description: "Open communication is the key. Managing expectations and having a sense of team is essential",
-  },
-  {
-    title: "What are the benefits of teamwork in a project?",
-    description: "The work gets completed seamlessly and each players gets to play according to his/her strengths.",
-  },
-  {
-    title: "Is professional knowledge of figma required to attend UI/UX workshop?",
+    title: "Is professional knowledge of Figma required to attend UI/UX workshop?",
     description: "No, we will be there to guide you through each step.",
+  },
+ 
+  {
+    title: "Are there networking sessions or social events planned?",
+    description: "Yes, we have various speakers' sessions planned with various startup founders, CXO's etc inlcuding Vijendar Chauhan.",
+  },
+ 
+  {
+    title: "How can we register for all the events?",
+    description: "The website contains the link for each event which will redirect you to bharatversity from where you can register for all the events.",
+  },
+
+  {
+    title: "How can I get  updates and announcements about E-Summit?",
+    description: "Follow us on our social media handles to get regular updates.",
   },
 ];
 
