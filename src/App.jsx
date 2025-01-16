@@ -1,4 +1,5 @@
 import React from "react"
+import Navbar from "./components/navbar.jsx"
 import PastSpeakersmain from "./components/past speakers/Pastspeakermain"
 import FeaturedSpeakers from "./components/FeaturedSpeaker/FS"
 import SponsorshipSection from "./components/SponsorshipSection"
@@ -10,16 +11,16 @@ import Sponser from "./components/Sponser/Sponser.jsx"
 
 function App() {
   return (
-    <>
-    <AboutUs />
-    <EventSchedule/>
-    <FeaturedSpeakers/>
-    <PastSpeakersmain/>
-    <SponsorshipSection/>
-    <Sponser/>
-    <Faq/>
-    <ContactUs/>
-    </>
+    <div>
+      <Navbar />
+      <AboutUs />
+      <EventSchedule />
+      <FeaturedSpeakers />
+      <PastSpeakersmain />
+      <SponsorshipSection />
+      <Faq />
+      <ContactUs />
+    </div>
   );
 }
 
