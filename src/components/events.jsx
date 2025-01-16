@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 
 const EventSchedule = () => {
     const [activeDay, setActiveDay] = useState('day1');
@@ -14,7 +14,7 @@ const EventSchedule = () => {
       }
     };
 
-    const scheduleData = {
+    const scheduleData = useMemo(() => ({
         day1: [
             {
                 time: '5:00 PM - 6:30 PM',
@@ -96,7 +96,7 @@ const EventSchedule = () => {
                 location: 'CAT Hall',
             },
         ],
-    };
+    }), []);
 
     return (
         <div className="pb-24">
