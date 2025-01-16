@@ -118,17 +118,13 @@ const PastSpeakers = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
               <div className="space-y-1 bg-black w-full h-full p-2">
-                                <Slide cascade>
                                   <h1 className="text-sm font-semibold text-white">{"Speaker name"}</h1>
                                   <h6 className="text-[#00B25C] text-[0.65rem]">{"Designation"}</h6>
-                                  <Fade cascade damping={0.05}>
                                     <h6 className="text-[0.65rem] text-[#B6B6B6]">{"Each character will appear one by one"}</h6>
-                                  </Fade>
                                   <div className="flex flex-row justify-start items-start gap-4 text-[#B6B6B6]">
                                     <a href=""><FaLinkedin /></a>
                                     <a href=""><BsTwitterX /></a>
                                   </div>
-                                </Slide>
                               </div>
             </div>
           ))}
