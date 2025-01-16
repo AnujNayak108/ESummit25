@@ -61,7 +61,7 @@ const ContactUs = () => {
       <div className="max-w-5xl w-full p-6 rounded-lg ">
         <h2  data-aos="fade-down" data-aos-duration="1000" className="text-4xl md:text-5xl font-semibold text-center mb-12">
           Contact Us
-          <div className="mt-2 h-1 bg-primaryGreen w-20 mx-auto rounded "></div>
+          <div className="mt-4 h-1 bg-primaryGreen w-20 mx-auto rounded "></div>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Section */}
