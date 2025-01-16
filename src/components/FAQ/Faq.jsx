@@ -36,15 +36,15 @@ const Faq = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-black py-20 px-4">
+    <section className="relative min-h-screen py-20 px-4">
       <div className="text-center mb-12">
-        <h2 className="font-sans text-4xl md:text-5xl font-bold text-[#EEEEEE]">
+        <h2  data-aos="fade-down" data-aos-duration="1000" className="text-4xl md:text-5xl font-semibold text-[#EEEEEE]">
           Frequently Asked Questions
         </h2>
         <div className="w-[125px] h-[4px] bg-green-500 mx-auto mt-2 rounded-lg " />
       </div>
 
-      <div className="w-full flex justify-center">
+      <div data-aos="fade-down" data-aos-duration="1000" className="w-full flex justify-center">
         <div className="w-[600px] h-max space-y-4">
           {frequentlyAskQuestions.map((item, i) => (
             <div
