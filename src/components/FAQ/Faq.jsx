@@ -41,10 +41,10 @@ const Faq = () => {
         <div className="w-[125px] h-[4px] bg-green-500 mx-auto mt-2" />
       </div>
 
-      <div data-aos="fade-down" data-aos-duration="1000" className="w-full flex justify-center">
+      <div className="w-full flex justify-center">
         <div className="w-[600px] h-max space-y-4">
           {frequentlyAskQuestions.map((item, i) => (
-            <div
+            <div  data-aos="fade-down" data-aos-duration="1000"
               key={i}
               className={`border rounded-lg overflow-hidden ${
                 activeId === i ? "bg-zinc-800" : "bg-zinc-900"
