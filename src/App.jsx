@@ -6,20 +6,29 @@ import Faq from "./components/FAQ/Faq";
 import AboutUs from "./components/AboutUs/AboutUs";
 import EventSchedule from "./components/events";
 import Navbar from "./components/navbar.jsx";
-import Hero from "./components/hero.jsx";
+
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <AboutUs />
-      <EventSchedule />
-      <FeaturedSpeakers />
-      <PastSpeakersmain />
-      <SponsorshipSection />
-      <Faq />
+      <section id="about" className="section">
+        <AboutUs />
+      </section>
+      <section id="events" className="section">
+        <EventSchedule />
+      </section>
+      <section id="speakers" className="section">
+        <FeaturedSpeakers />
+      </section>
+      <section id="sponsors" className="section">
+        <SponsorshipSection />
+      </section>
+      <section id="faq" className="section">
+        <Faq />
+      </section>
     </div>
+ 
   );
 }
 export default App;
