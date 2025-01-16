@@ -116,6 +116,7 @@ const PastSpeakers = () => {
                 src={photo} 
                 alt={`Item ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
+                draggable={false}
               />
               <div className="space-y-1 bg-black w-full h-full p-2">
                                   <h1 className="text-sm font-semibold text-white">{"Speaker name"}</h1>
