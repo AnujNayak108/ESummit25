@@ -11,6 +11,7 @@ import Hero from "./components/hero.jsx";
 function App() {
   return (
     <div>
+      <Navbar />
       <Hero />
       <AboutUs />
       <EventSchedule />
