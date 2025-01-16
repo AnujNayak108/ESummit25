@@ -1,4 +1,5 @@
 import React from "react"
+import Navbar from "./components/navbar.jsx"
 import PastSpeakersmain from "./components/past speakers/Pastspeakermain"
 import FeaturedSpeakers from "./components/FeaturedSpeaker/FS"
 import SponsorshipSection from "./components/SponsorshipSection"
@@ -12,7 +13,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
       <AboutUs />
       <EventSchedule />
       <FeaturedSpeakers />
