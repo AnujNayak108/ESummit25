@@ -33,8 +33,8 @@ const Faq = () => {
   };
 
   return (
-    <section className="relative min-h-screen py-20 px-4">
-      <div className="text-center mb-12">
+    <section className="relative min-h-screen py-20 px-4 mt-96">
+      <div className="text-center mb-12 mt-96">
         <h2  data-aos="fade-down" data-aos-duration="1000" className="text-4xl md:text-5xl font-semibold text-[#EEEEEE]">
           Frequently Asked Questions
         </h2>
