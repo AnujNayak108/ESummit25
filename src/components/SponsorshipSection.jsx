@@ -10,25 +10,16 @@ import img8 from './Sponser/startupjhk.png';
 
 const SponsorshipSection = () => {
   return (
-    <section className="relative min-h-screen py-20 px-4 overflow-hidden">
-      {/* Background Gradient */}
+    <section className="sponsors relative w-full py-20 mx-auto">
       <div className="absolute top-28 left-0 w-[400px] h-[400px] md:w-[500px] md:h-[500px] bg-green-500/30 rounded-full blur-3xl" />
-
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Main Heading */}
-        <div className="text-center mb-12">
-          <h2
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            className="text-4xl md:text-5xl font-semibold text-white"
-          >
-            Our Sponsors
-          </h2>
-          <div className="w-[100px] h-[4px] bg-green-500 mx-auto mt-2" />
-        </div>
-
-        {/* Title Sponsors */}
-        <div className="mb-16">
+        <div className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
+        <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold md:text-5xl text-3xl text-white">
+          Our Sponsors
+        </h1>
+        <div className="h-1 w-36 bg-primaryGreen rounded-md"></div>
+      </div>
+        <div className="my-16">
           <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Title Sponsor
           </h3>
@@ -66,9 +57,7 @@ const SponsorshipSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Co-powered Sponsors */}
-        <div className="mb-16">
+        <div>
           <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Co-powered by
           </h3>
