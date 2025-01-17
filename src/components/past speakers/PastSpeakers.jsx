@@ -129,7 +129,7 @@ const PastSpeakers = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden overflow-hidden md:py-32 py-24">
+    <div className="w-full flex flex-col items-center justify-center overflow-x-hidden overflow-hidden md:py-20 py-12">
       <div 
         ref={containerRef}
         className="w-full max-w-4xl mx-auto px-4 relative"

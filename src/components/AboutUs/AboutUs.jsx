@@ -11,11 +11,7 @@ const AboutUs = () => {
   }, []);
 
   const memoizedContent = useMemo(() => (
-    <section className="about w-full pb-24 relative z-20">
-      <video autoPlay loop muted className="w-screen h-auto object-cover my-16 -z-50">
-        <source src={hero} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section className="about relative pb-24">
       {/* Background Blob */}
       <div className="absolute top-[60rem] -left-48 w-48 h-48 md:w-[550px] md:h-[500px] bg-green-500/30 rounded-full blur-3xl -z-10" />
       {/* About us Heading */}
@@ -61,7 +57,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={1000}
                 to={5000}
-                className="text-primaryGreen md:text-4xl text-2xl font-medium"
+                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -74,7 +70,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={0}
                 to={6}
-                className="text-primaryGreen md:text-4xl text-2xl font-medium"
+                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -90,7 +86,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={0}
                 to={10}
-                className="text-primaryGreen md:text-4xl text-2xl font-medium"
+                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -102,8 +98,8 @@ const AboutUs = () => {
             >
               <AnimatedCounter
                 from={0}
-                to={1}
-                className="text-primaryGreen md:text-4xl text-2xl font-medium"
+                to={2}
+                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
               >
                 L+
               </AnimatedCounter>

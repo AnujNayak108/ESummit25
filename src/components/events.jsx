@@ -114,7 +114,7 @@ const EventSchedule = () => {
     }), []);
 
     return (
-        <section className="events pb-24">
+        <section className="events pb-12">
             <div className="absolute right-0 w-[100px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl z-auto" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
