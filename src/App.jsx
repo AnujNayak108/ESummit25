@@ -7,7 +7,7 @@ import Faq from "./components/FAQ/Faq"
 import AboutUs from "./components/AboutUs/AboutUs"
 import EventSchedule from "./components/events"
 import ContactUs from "./components/Contact.jsx"
-import Sponser from "./components/Sponser/Sponser.jsx"
+import Footer from "./components/Footer.jsx"
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <SponsorshipSection />
       <Faq />
       <ContactUs />
+      <Footer />
     </div>
   );
 }

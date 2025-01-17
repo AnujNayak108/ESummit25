@@ -12,12 +12,12 @@ const AboutUs = () => {
 
   const memoizedContent = useMemo(() => (
     <div className="w-full pb-24 relative z-20">
-      <video autoPlay loop muted className="w-full h-screen object-cover mb-12">
+      <video autoPlay loop muted className="w-screen h-auto object-cover my-16 -z-50">
         <source src={hero} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Background Blob */}
-      <div className="absolute top-[70] -left-40 w-48 h-48 md:w-[600px] md:h-[530px] bg-green-500/30 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-[60rem] -left-48 w-48 h-48 md:w-[550px] md:h-[500px] bg-green-500/30 rounded-full blur-3xl -z-10" />
       {/* About us Heading */}
       <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center">
         <h1 className="font-semibold md:text-5xl text-3xl text-white">About E-Summit'25</h1>
@@ -25,7 +25,7 @@ const AboutUs = () => {
       </div>
 
       {/* About us container */}
-      <div className="flex flex-wrap justify-center items-stretch md:gap-x-12 gap-6 text-gray-300 z-10 md:mt-16 mt-4">
+      <div className="flex flex-wrap justify-center items-stretch md:gap-x-12 gap-6 text-secondaryText z-10 md:mt-16 mt-4">
         {/* Left Container */}
         <div data-aos="fade-right" data-aos-duration="1000" className="flex flex-col md:w-2/5 w-4/5 gap-6">
           {/* About edc card */}
@@ -33,7 +33,7 @@ const AboutUs = () => {
             <h4 className="z-10 text-primaryGreen text-xl">
               What is E-Summit?
             </h4>
-            <p className="z-10 pb-2 text-secondaryText">
+            <p className="z-10 py-2 text-secondaryText">
               E-Summit is BIT Mesra's flagship entrepreneurship event,
               bringing together innovators, entrepreneurs, and leaders to
               foster the spirit of entrepreneurship and innovation.
@@ -42,7 +42,7 @@ const AboutUs = () => {
           {/* Our Mission card */}
           <div className="flex flex-1 flex-col p-4 bg-primaryGrey rounded-md border border-borderColor min-h-[130px]">
             <h4 className="z-10 text-primaryGreen text-xl">Our Mission</h4>
-            <p className="z-10 pb-2 text-secondaryText">
+            <p className="z-10 py-2 text-secondaryText">
               To create a platform that nurtures entrepreneurial mindsets,
               facilitates networking, and provides valuable insights into the
               startup ecosystem.
