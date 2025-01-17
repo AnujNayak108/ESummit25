@@ -20,11 +20,13 @@ const EventSchedule = () => {
                 time: '5:00 PM - 6:30 PM',
                 title: 'Opening Ceremony',
                 location: 'CAT Hall',
+                link: '#',
             },
             {
                 time: '6:30 PM - 8:30 PM',
                 title: 'Keynote Speaker Session',
                 location: 'CAT Hall',
+                link: '#',
             },
         ],
         day2: [
@@ -32,36 +34,43 @@ const EventSchedule = () => {
                 time: '09:00 AM - 12:00 PM',
                 title: 'B-Plan',
                 location: 'Lecture Hall 2',
+                link: 'https://qr-codes.io/e2eZ8u',
             },
             {
                 time: '11:00 AM - 01:00 PM',
                 title: 'Keynote Speaker Session',
                 location: 'CAT Hall',
+                link: '#',
             },
             {
                 time: '12:00 PM - 5:00 PM',
                 title: 'IPL Auction',
                 location: 'Lecture Hall 1',
+                link: 'https://qr-codes.io/ft6k1g',
             },
             {
                 time: '3:00 PM - 5:00 PM',
                 title: 'Ad-venture ROund-1',
                 location: 'Room 219, Main Building',
+                link: 'https://qr-codes.io/jPuc2G',
             },
             {
                 time: '3:00 PM - 5:00 PM',
                 title: 'Intelligent Investor',
                 location: 'Room 220, Main Building',
+                link: 'https://qr-codes.io/WYtiwl',
             },
             {
                 time: '5:30 PM - 8:30 PM',
                 title: 'Keynote Speaker Session',
                 location: 'CAT Hall',
+                link: '#',
             },
             {
                 time: '12:00 AM - 5:00 AM',
                 title: 'BGMI Finals',
                 location: 'Lab 7, R&D Building',
+                link: 'https://qr-codes.io/bHzwcV',
             },
         ],
         day3: [
@@ -69,31 +78,37 @@ const EventSchedule = () => {
                 time: '9:00 AM - 5:00 PM',
                 title: 'IPL Auction Finals',
                 location: 'Lecture Hall 1',
+                link: 'https://qr-codes.io/ft6k1g',
             },
             {
                 time: '11:00 AM - 3:00 PM',
                 title: 'Bazaar Clash',
                 location: 'Shorbagh',
+                link: 'https://qr-codes.io/VFRK3D',
             },
             {
                 time: '12:00 AM - 2:00 PM',
                 title: 'Keynote Speaker Session',
                 location: 'CAT Hall',
+                link: '#',
             },
             {
                 time: '3:00 PM - 5:00 PM',
                 title: 'UI-UX Arena',
                 location: 'Room 220, Main Building',
+                link: 'https://qr-codes.io/MMih89',
             },
             {
                 time: '4:00 PM - 5:00 PM',
                 title: 'Ad-venture Round-2',
                 location: 'Room 220, Main Building',
+                link: 'https://qr-codes.io/jPuc2G',
             },
             {
                 time: '5:30 PM - 8:30 PM',
                 title: 'Keynote Speaker Session + Closing Ceremony',
                 location: 'CAT Hall',
+                link: '#',
             },
         ],
     }), []);
@@ -139,7 +154,7 @@ const EventSchedule = () => {
                                         <p className="text-secondaryText mt-1">{event.location}</p>
                                     </div>
                                     <button className="mt-4 md:mt-0 px-4 py-2 bg-primaryGreen text-primaryText rounded-lg transform transition duration-300 hover:scale-105 hover:bg-secondaryGreen">
-                                        Register Now
+                                        <a href={event.link}>Register Now</a>
                                     </button>
                                 </div>
                             </div>

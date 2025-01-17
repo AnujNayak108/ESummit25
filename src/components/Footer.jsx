@@ -29,8 +29,8 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold text-primaryText mb-4">For Queries</h3>
               <ul>
-                <li><a href="mailto:btech10947.22@bitmesra.ac.in">Pranav Raj Srivastav</a></li>
-                <li><a href="mailto:btech10731.22@bitmesra.ac.in">Anshuman Tomar</a></li>
+                <li className='hover:text-primaryGreen'><a href="mailto:btech10947.22@bitmesra.ac.in">Pranav Raj Srivastav</a></li>
+                <li className='hover:text-primaryGreen'><a href="mailto:btech10731.22@bitmesra.ac.in">Anshuman Tomar</a></li>
               </ul>
             </div>
           </div>
