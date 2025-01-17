@@ -57,7 +57,7 @@ const ContactUs = () => {
 
 
   return (
-    <div className="min-h-screen text-primaryText flex justify-center items-center px-4">
+    <section className="contact min-h-screen text-primaryText flex justify-center items-center px-4">
       <div data-aos="fade-down" data-aos-duration="1000" className="max-w-5xl w-full p-6 rounded-lg ">
         <div className="flex flex-col justify-center items-center mb-12">
           <h1 className="font-semibold md:text-5xl text-3xl text-white">Contact Us</h1>
@@ -187,7 +187,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   );
 };

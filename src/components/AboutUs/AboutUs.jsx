@@ -11,7 +11,7 @@ const AboutUs = () => {
   }, []);
 
   const memoizedContent = useMemo(() => (
-    <div className="w-full pb-24 relative z-20">
+    <section className="about w-full pb-24 relative z-20">
       <video autoPlay loop muted className="w-screen h-auto object-cover my-16 -z-50">
         <source src={hero} type="video/mp4" />
         Your browser does not support the video tag.
@@ -112,7 +112,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   ), []);
 
   return <>{memoizedContent}</>;

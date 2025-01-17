@@ -7,7 +7,7 @@ import { Slide, Fade } from "react-awesome-reveal";
 
 const FeaturedSpeakers = () => {
   return (
-    <div className="w-full relative mx-auto pt-12 pb-12">
+    <section className="speakers w-full relative mx-auto pt-12 pb-12">
       <div className="absolute top-0 left-0 w-[200px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
       <div className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
             <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold md:text-5xl text-3xl text-white">Featured Speakers</h1>
@@ -146,7 +146,7 @@ const FeaturedSpeakers = () => {
             </div>
       </div>
       </div>
-    </div>
+    </section>
   );
 };
 

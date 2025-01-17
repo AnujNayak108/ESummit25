@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import { Link } from "react-scroll";
 import logo from "../assets/esummitlogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
@@ -32,27 +33,51 @@ const Navbar = () => {
               />
             )}
           </div>
+          
           <div className="hidden md:flex items-center space-x-8 mr-16 ml-auto">
-            <button className="text-primaryText hover:text-primaryGreen transition font-medium">About</button>
-            <button className="text-primaryText hover:text-primaryGreen transition font-medium">Events</button>
-            <button className="text-primaryText hover:text-primaryGreen transition font-medium">Speakers</button>
-            <button className="text-primaryText hover:text-primaryGreen transition font-medium">Sponsors</button>
-            <button className="text-primaryText hover:text-primaryGreen transition font-medium">Contact</button>
+            <Link to="about" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              About
+            </Link>
+            <Link to="events" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              Events
+            </Link>
+            <Link to="speakers" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              Speakers
+            </Link>
+            <Link to="sponsors" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              Sponsors
+            </Link>
+            <Link to="faq" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              FAQ
+            </Link>
+            <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+              Contact
+            </Link>
           </div>
-          <button className="hidden md:flex bg-primaryGreen text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105">
-            Register Now
-          </button>
         </div>
         <div
           className={`md:hidden flex flex-col items-center bg-black transition-all duration-500 ease-in-out overflow-hidden ${
             menuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
           } space-y-6 text-lg`}
         >
-          <button className="text-primaryText hover:text-primaryGreen transition font-medium">About</button>
-          <button className="text-primaryText hover:text-primaryGreen transition font-medium">Events</button>
-          <button className="text-primaryText hover:text-primaryGreen transition font-medium">Speakers</button>
-          <button className="text-primaryText hover:text-primaryGreen transition font-medium">Sponsors</button>
-          <button className="text-primaryText hover:text-primaryGreen transition font-medium">Contact</button>
+          <Link to="about" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            About
+          </Link>
+          <Link to="events" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            Events
+          </Link>
+          <Link to="speakers" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            Speakers
+          </Link>
+          <Link to="sponsors" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            Sponsors
+          </Link>
+          <Link to="faq" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            FAQ
+          </Link>
+          <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            Contact
+          </Link>
         </div>
       </nav>
     );
