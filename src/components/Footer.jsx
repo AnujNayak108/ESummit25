@@ -7,17 +7,15 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
         {/* Left Section */}
         <div className="flex-1">
-          <img src={logo} alt="" className="md:h-16 h-10" />
+          <img src={logo} alt="" className="md:h-16 h-10 ml-1 sm:p-0" />
           <p className="text-secondaryText px-4">
-            We strive to be at the forefront of technological advancements and
-            industry best practices, consistently exceeding the expectations of
-            our clients.
+          Scale Your Story – Where ambitions rise, ideas thrive, and your journey to impact begins!
           </p>
         </div>
 
         {/* Right Section */}
         <div className="flex-1 lg:pl-32">
-          <h2 className="text-xl font-semibold mb-2 items-center justify-center pl-40">Contacts</h2>
+          <h2 className="text-xl font-semibold mb-2 md:ml-40">Contacts</h2>
           <div className="grid grid-cols-2 gap-4 text-gray-400">
             <div>
               <h3 className="font-semibold text-primaryText mb-4">For Official</h3>
@@ -40,7 +38,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center text-gray-500 text-sm mt-12">
+      <div className="text-center text-gray-500 text-sm mt-12 mb-2">
         © 2024 EDC, BIT Mesra. All rights reserved.
       </div>
     </footer>
